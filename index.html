@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ScratchOS</title>
+</head>
+<body>
+    <div class = "screen">
+        <div class = "popup aboutWindow">
+            <div class = "topbar">
+                <button class = "minimize" id = "aboutMini">---</button>
+                <button class = "fullscreen" id = "aboutFull">D</button>
+                <button class = "close" id = "aboutClose">X</button>
+            </div>
+            <h1>About Me</h1>
+            <p>Hi, I am Devansh Gupta, I am currently pursuing the 4-year undergraduate program of Bachelors of Technology at GL Bajaj Institute
+            of Technology and Management, and I am expected to graduate in the year 2029. </p><p>I have built many projects since the year 2021 in the
+            field of Game Development and Web Development. I was a Game Developer in Kongregate in the year 2021.</p>
+        </div>
+        <div class = "popup projects">
+            <div class = "topbar">
+                <button class = "minimize" id = "projectMini">---</button>
+                <button class = "fullscreen" id = "projectFull">D</button>
+                <button class = "close" id = "projectClose">X</button>
+            </div>
+            <h1>Projects</h1>
+            <p>Projects listed are my creation or inspired from projects of other people:</p>
+            <ul>
+                <li><a href = "https://github.com/DevanshGupta-6/Unity-Third-Person-Controller" target = "_blank"><h2>Third Person Controller in Unity</h2></a><br>This repo was a part of the original project of an extensive game in 2021. However due to less awareness of
+                hardware limitations the HDD of my Laptop overheated and got corrupted destroying everything in the process. These scripts got saved due to them being in Github.<br><br><b>Languages used:</b> C#</li>
+                <br>
+                <li><a href = "https://github.com/DevanshGupta-6/PHPnewsWebsite" target = "_blank"><h2>News website</h2></a><br>This website uses PHP and JS to retrieve data from a MySQL database and present
+                as News. The data consisted of News Headline, the body of the article, cover picture, date published and description. <br>It also has an Admin's panel guarded by a simple login page
+                so that the admin can publish the news without opening the database or learning to use MySQL.<br><br><b>Languages Used:</b> HTML, CSS, PHP, JS</li>
+                <br>
+                <li><a id = "videoGame" target = "_blank" style="cursor: pointer;"><h2>A video game</h2></a><br>This is a Video Game designed using HTML, CSS and JS only. This game features a seahorse character
+                    trying to survive in a mob of mechanical Piranhas. It can be moved Up or Down by using the Arrow Keys to dodge the Piranhas or the Piranhas can be shot down. By using 
+                    Spacebar key fireballs come out of the Seahorse's mouth<br><br><b>Languages Used:</b> HTML, CSS, JS</li>
+                <br>
+                <li><a id = "sudoku" target = "_blank" style="cursor: pointer;"><h2>Sudoku</h2></a><br>This project is Sudoku built inside HTML, CSS, JS. It currently has only one layout, click on a cell to select it
+                    and type the number to enter it in the selected cell. Type zero to remove the written number.<br><br><b>Languages Used:</b> HTML, CSS, JS</li>
+                <br>
+                <li><a href = "https://github.com/DevanshGupta-6/Summer_Assignment_25113CN287" target = "_blank"><h2>Summer Assignment of Training and Placement Program</h2></a><br>This repository 
+                contains all the code that I wrote which was assigned to us for 30 days by the Training and Placement Cell of our college. This repository covers basic questions to Leetcode-level questions as well<br><br><b>Languages Used:</b> C++</li>
+                <br>
+                <li><a href = "https://github.com/DevanshGupta-6/WebDevAssignment" target = "_blank"><h2>Small Websites</h2></a><br>This repository 
+                contains all the small webpages that I built while learning Web Development in 2025.<br><br><b>Languages Used:</b> C++</li>
+                <br>
+            </ul>
+        </div>
+
+        <div class = "popup videogame">
+            <div class = "topbar">
+                <button class = "minimize" id = "gameMini">---</button>
+                <button class = "fullscreen" id = "gameFull">D</button>
+                <button class = "close" id = "gameClose">X</button>
+            </div>
+            <iframe src = "https://devanshgupta-6.github.io/GameUsingJS/" width="100%" height = "100%"><p>Your browser does not support iFrames</p></iframe>
+        </div>
+        <div class = "popup sudoku">
+            <div class = "topbar">
+                <button class = "minimize" id = "sudokuMini">---</button>
+                <button class = "fullscreen" id = "sudokuFull">D</button>
+                <button class = "close" id = "sudokuClose">X</button>
+            </div>
+            <iframe src = "https://devanshgupta-6.github.io/SudokuMadeWithJS/" width="100%" height = "100%"><p>Your browser does not support iFrames</p></iframe>
+        </div>
+        <div class = "container">
+            <div class = "icon about"><img src = "./FolderIcons/Contacts.svg">About Me</div>
+            <div class = "icon project"><img src = "./FolderIcons/9gag.svg">Projects</div>
+            <div class = "icon"><img src = "./FolderIcons/Font.svg"><br>My Blogs</div>
+            <div class = "icon"><img src = "./FolderIcons/discord.svg">Socials</div>
+            <div class = "icon"><img src = "./FolderIcons/visual_studio_code-1.svg"><br>VS Code</div>
+        </div>
+    <div class = "taskbar">
+        <button id = "start">Start</button>
+        <input type = "text" placeholder="Search"/>
+
+    </div>
+</div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

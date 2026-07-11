@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./wallpaper.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    z-index: 0;
+    border-radius: 12px;
+    justify-content: center;
+    position: absolute;
+    top: 615px;
+    transform: scale(0.125);
+    align-items: center;
+    display:grid;
+    background-color: #16151A;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: top 0.5s ease, transform 0.5s ease;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    transition: transform 0.5s ease;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+.icon img{
+    width: 55px;
+    height: auto;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+.taskbar{
+    display: flex;
+    position:absolute;
+    top: 677px;
+    width: 70vw;
+    height: 50px;
+    gap:10px;
+    background-color: #25232F;
+}
+#start{
+    background-color: rgb(255, 106, 253);
+    margin: 2px;
+    width: 50px;
+}
+.taskbar input{
+    margin: 2px;
+    border-radius: 19px;
+}
+.popup{
+    color: white;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    width: 80vw;
+    height: 590px;
+    background-color: #353246;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+.aboutWindow, .projects, .videogame, .sudoku{
+    display:none;
+}
+
+.popup p, .popup h1{
+    margin: 9px;
+}
+.popup ul{
+    margin-left: 18px;
+}
+.popup a{
+    text-decoration: none;
+    color: white;
+}
+.popup a:hover{
+    text-decoration: underline;
+}
+.topbar{
+    top: 0.0000025px;
+    display: flex;
+    justify-content: end;
+    background-color: #25232F;
+    height: 40px;
+    position: sticky;
+}
+.topbar button{
+    background-color: #25232F;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.25s ease;
+}
+.topbar .close:hover{
+    background-color: red;
+}
+.minimize:hover, .fullscreen:hover{
+    background-color: rgb(40, 0, 97);
+}
+.max{
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+/*664DE3*/
