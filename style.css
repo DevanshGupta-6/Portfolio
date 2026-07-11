@@ -20,7 +20,7 @@ body{
     border-radius: 12px;
     justify-content: center;
     position: absolute;
-    top: 615px;
+    top: 590px;
     transform: scale(0.125);
     align-items: center;
     display:grid;
@@ -47,7 +47,7 @@ body{
 .taskbar{
     display: flex;
     position:absolute;
-    top: 667px;
+    top: 627px;
     width: 70vw;
     height: 50px;
     gap:10px;
