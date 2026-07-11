@@ -52,6 +52,7 @@ body{
     height: 50px;
     gap:10px;
     background-color: #25232F;
+    z-index: 10;
 }
 #start{
     background-color: rgb(255, 106, 253);
@@ -70,7 +71,7 @@ body{
 .popup{
     color: white;
     position: absolute;
-    top: 100px;
+    top: 50px;
     z-index: 1;
     width: 80vw;
     height: 590px;
