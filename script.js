@@ -2,6 +2,7 @@ const startbtn = document.getElementById('start')
 const cont = document.querySelector('.container')
 const aboutBtn = document.querySelector('.about')
 const projectsBtn = document.querySelector('.project')
+const blogBtn = document.querySelector('.blog')
 
 let startOn = false;
 
@@ -18,6 +19,8 @@ let aboutUs = new Popups('.aboutWindow', '#aboutFull', '#aboutClose')
 let projectsWindow = new Popups('.projects', '#projectFull', '#projectClose')
 let gameWindow = new Popups('.videogame', '#gameFull', '#gameClose')
 let sudokuWindow = new Popups('.sudoku', '#sudokuFull', '#sudokuClose')
+let blogWindow = new Popups('.blogs', '#blogFull', '#blogClose')
+
 startbtn.addEventListener('click', ()=>{
     if(!startOn){
         cont.style.top = '300px';
@@ -77,6 +80,28 @@ projectsWindow.close.addEventListener('click', ()=>{
 })
 projectsWindow.max.addEventListener('click', ()=>{
     projectsWindow.reference.classList.toggle('max')
+})
+
+blogBtn.addEventListener('click', ()=>{
+
+    if(!blogWindow.windowOn){
+        blogWindow.reference.style.display = 'block';
+        cont.style.top = '615px'
+        cont.style.transform = 'scale(0.125)'
+        cont.style.zIndex = '0'
+        startOn = false;
+        blogWindow.windowOn = true;
+    }else{
+        blogWindow.reference.style.display = 'none'
+        blogWindow.windowOn = false;
+    }
+})
+blogWindow.close.addEventListener('click', ()=>{
+    blogWindow.reference.style.display = 'none';
+    blogWindow.windowOn = false;
+})
+blogWindow.max.addEventListener('click', ()=>{
+    blogWindow.reference.classList.toggle('max')
 })
 
 const game = document.getElementById('videoGame')
