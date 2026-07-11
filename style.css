@@ -47,7 +47,7 @@ body{
 .taskbar{
     display: flex;
     position:absolute;
-    top: 627px;
+    top: 644px;
     width: 70vw;
     height: 50px;
     gap:10px;
