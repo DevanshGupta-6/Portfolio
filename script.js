@@ -3,7 +3,7 @@ const cont = document.querySelector('.container')
 const aboutBtn = document.querySelector('.about')
 const projectsBtn = document.querySelector('.project')
 const blogBtn = document.querySelector('.blog')
-const socialBtn = document.querySelector('social')
+const socialBtn = document.querySelector('.social')
 
 let startOn = false;
 
