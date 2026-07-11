@@ -3,6 +3,7 @@ const cont = document.querySelector('.container')
 const aboutBtn = document.querySelector('.about')
 const projectsBtn = document.querySelector('.project')
 const blogBtn = document.querySelector('.blog')
+const socialBtn = document.querySelector('social')
 
 let startOn = false;
 
@@ -20,6 +21,7 @@ let projectsWindow = new Popups('.projects', '#projectFull', '#projectClose')
 let gameWindow = new Popups('.videogame', '#gameFull', '#gameClose')
 let sudokuWindow = new Popups('.sudoku', '#sudokuFull', '#sudokuClose')
 let blogWindow = new Popups('.blogs', '#blogFull', '#blogClose')
+let socialWindow = new Popups('.socials', '#socialFull', '#socialClose')
 
 startbtn.addEventListener('click', ()=>{
     if(!startOn){
@@ -104,6 +106,27 @@ blogWindow.max.addEventListener('click', ()=>{
     blogWindow.reference.classList.toggle('max')
 })
 
+socialBtn.addEventListener('click', ()=>{
+
+    if(!socialWindow.windowOn){
+        socialWindow.reference.style.display = 'block';
+        cont.style.top = '615px'
+        cont.style.transform = 'scale(0.125)'
+        cont.style.zIndex = '0'
+        startOn = false;
+        socialWindow.windowOn = true;
+    }else{
+        socialWindow.reference.style.display = 'none'
+        socialWindow.windowOn = false;
+    }
+})
+socialWindow.close.addEventListener('click', ()=>{
+    socialWindow.reference.style.display = 'none';
+    socialWindow.windowOn = false;
+})
+socialWindow.max.addEventListener('click', ()=>{
+    socialWindow.reference.classList.toggle('max')
+})
 const game = document.getElementById('videoGame')
 game.addEventListener('click', ()=>{
     if(!gameWindow.windowOn){
