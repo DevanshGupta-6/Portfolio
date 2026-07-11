@@ -30,7 +30,7 @@ startbtn.addEventListener('click', ()=>{
         }
         startOn = true;
     }else{
-        cont.style.top = '644px';
+        cont.style.top = '590px';
         cont.style.transform = 'scale(0.125)'
         setTimeout(()=>{
             cont.style.zIndex = '0'
