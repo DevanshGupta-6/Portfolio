@@ -71,10 +71,10 @@ body{
 .popup{
     color: white;
     position: absolute;
-    top: 50px;
+    top: 20px;
     z-index: 1;
     width: 80vw;
-    height: 590px;
+    height: 650px;
     background-color: #353246;
     overflow-y: scroll;
     overflow-x: auto;
