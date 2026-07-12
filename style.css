@@ -74,10 +74,13 @@ body{
     top: 20px;
     z-index: 1;
     width: 80vw;
-    height: 650px;
+    height: 630px;
     background-color: #353246;
     overflow-y: scroll;
     overflow-x: auto;
+}
+.popup .videogame{
+    overflow: hidden;
 }
 .aboutWindow, .projects, .videogame, .sudoku, .blogs, .socials{
     display:none;
