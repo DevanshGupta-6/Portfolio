@@ -131,6 +131,8 @@ const game = document.getElementById('videoGame')
 game.addEventListener('click', ()=>{
     if(!gameWindow.windowOn){
         gameWindow.reference.style.display = 'block';
+        const iframe = document.getElementById('myIframe')
+        iframe.src = iframe.src;
         cont.style.top = '615px'
         cont.style.transform = 'scale(0.125)'
         cont.style.zIndex = '0'
